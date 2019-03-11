@@ -1,0 +1,24 @@
+body{
+    margin: 0;
+}
+.wrapper{
+margin: 0;
+  display: flex;
+  flex-shrink: 0;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.header img{
+    width: 100%;
+    
+}
+
+.hero img{
+    width: 100%;
+
+}
+
+.section-acustica img{
+    width: 100%;
+}
