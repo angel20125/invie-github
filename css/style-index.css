@@ -1,5 +1,6 @@
-body{
+body  .wrapper{
     margin: 0;
+    border: solid 5px  #1d252c;
 }
 .wrapper{
 margin: 0;
