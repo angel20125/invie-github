@@ -1,8 +1,26 @@
+
 body{
     margin: 0;
     border:  10px solid gray;
 }
-img {
- vertical-align: top;
- width: 100%;
+img{
+    max-width: 100%;
+    vertical-align: top;
+    
+}
+/*Si (resolución <= 768px) se ocultan las otras img que no tienen id*/
+@media screen and (max-width:768px){
+    img{
+        display: none;
+    }
+}
+/*Sí (resolución >768px) se oculta la imagen responsiva*/
+img#responsivo{
+    display:none;
+}
+/*Sí (resulució <= 768px) se muestra la imagen responsiva*/
+@media screen and (max-width:768px){
+    img#responsivo{
+        display: block;
+    }
 }
