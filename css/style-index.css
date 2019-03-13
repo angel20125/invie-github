@@ -1,29 +1,25 @@
-body  .wrapper{
+
+body{
     margin: 0;
-    border: solid 5px  #1d252c;
 }
-.wrapper{
-margin: 0;
-  display: flex;
-  flex-shrink: 0;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-}
-.header img{
-    width: 100%;
+img{
+    max-width: 100%;
+    vertical-align: top;
     
 }
-
-.hero img{
-    width: 100%;
-
+/*Si (resolución <= 768px) se ocultan las otras img que no tienen id*/
+@media screen and (max-width:768px){
+    img{
+        display: none;
+    }
 }
-
-.section-acustica img{
-    width: 100%;
+/*Sí (resolución >768px) se oculta la imagen responsiva*/
+img#responsivo{
+    display:none;
 }
-
-.section-clasica img{
-    width: 100%;
+/*Sí (resulució <= 768px) se muestra la imagen responsiva*/
+@media screen and (max-width:768px){
+    img#responsivo{
+        display: block;
+    }
 }
